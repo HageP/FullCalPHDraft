@@ -12,6 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require moment.min
 //= require turbolinks
 //= require fullcalendar
+//= require fullcalendar.min
+//= require scheduler.min
+//= require scheduler
 //= require_tree .

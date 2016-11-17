@@ -5,6 +5,7 @@
 #
 $(document).ready ->
   $("#calendar").fullCalendar(
+    editable: true,
     events: '/events.json'
-  )
 
+  )

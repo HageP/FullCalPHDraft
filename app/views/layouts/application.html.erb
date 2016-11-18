@@ -2,11 +2,18 @@
 <html>
 <head>
   <title>FullcalendarAndRails</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  <%= stylesheet_link_tag "fullcalendar.min.css" %>
-  <%= stylesheet_link_tag "scheduler.min.css" %>
+
+  <link rel='stylesheet' href='http://bostonexec.com/css/fullcalendar.min.css' />
+  <link rel='stylesheet' href='http://bostonexec.com/css/fullcalendar.print.css' media='print' />
+  <link rel='stylesheet' href='http://bostonexec.com/css/scheduler.min.css' />
+  <script src='http://bostonexec.com/js/jquery.min.js'></script>
+  <script src='http://bostonexec.com/js/moment.min.js'></script>
+  <script src='http://bostonexec.com/js/fullcalendar.min.js'></script>
+  <script src='http://bostonexec.com/js/scheduler.js'></script>
+
+
+
 </head>
 <body>
 

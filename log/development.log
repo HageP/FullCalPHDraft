@@ -4062,3 +4062,1618 @@ Processing by EventsController#index as JSON
   [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
   Rendered events/index.json.jbuilder (1.5ms)
 Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for ::1 at 2016-11-16 19:32:11 -0600
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (4.5ms)
+  Rendered events/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-18 13:30:01 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 96ms (Views: 76.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-10-30&end=2016-12-11&_=1479497402466" for 127.0.0.1 at 2016-11-18 13:30:02 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-10-30", "end"=>"2016-12-11", "_"=>"1479497402466"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (14.2ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/events/1.html" for 127.0.0.1 at 2016-11-18 13:30:08 -0600
+Processing by EventsController#update as HTML
+  Parameters: {"event"=>{"start_time"=>"Wed Nov 09 2016 01:18:00 GMT-0600 (Central Standard Time)", "end_time"=>"Sun Nov 13 2016 01:18:00 GMT-0600 (Central Standard Time)"}, "id"=>"1"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "events" SET "start_time" = ?, "end_time" = ?, "updated_at" = ? WHERE "events"."id" = ?  [["start_time", "2016-11-09 07:18:00.000000"], ["end_time", "2016-11-13 07:18:00.000000"], ["updated_at", "2016-11-18 19:30:08.318748"], ["id", 1]]
+  [1m[36m (100.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/1
+Completed 200 OK in 153ms (ActiveRecord: 100.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:31:08 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 93ms (Views: 91.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:31:11 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:31:51 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 89ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:32:02 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-10-30&end=2016-12-11&_=1479497522801" for ::1 at 2016-11-18 13:32:02 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-10-30", "end"=>"2016-12-11", "_"=>"1479497522801"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (1.5ms)
+Completed 200 OK in 64ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:43:59 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-10-30&end=2016-12-11&_=1479498239988" for ::1 at 2016-11-18 13:44:00 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-10-30", "end"=>"2016-12-11", "_"=>"1479498239988"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:44:20 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479498260522" for ::1 at 2016-11-18 13:44:20 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479498260522"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (1.9ms)
+Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:44:43 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/resources.json?_=1479498283156" for ::1 at 2016-11-18 13:44:43 -0600
+
+ActionController::RoutingError (No route matches [GET] "/resources.json"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (187.6ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479498283157" for ::1 at 2016-11-18 13:44:43 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479498283157"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 55ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-13&end=2016-11-20&_=1479498283158" for ::1 at 2016-11-18 13:44:57 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-13", "end"=>"2016-11-20", "_"=>"1479498283158"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (1.5ms)
+Completed 200 OK in 68ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479498283159" for ::1 at 2016-11-18 13:45:04 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479498283159"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-10-30&end=2016-12-11&_=1479498283160" for ::1 at 2016-11-18 13:45:16 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-10-30", "end"=>"2016-12-11", "_"=>"1479498283160"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 58ms (Views: 56.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:45:21 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/resources.json?_=1479498321639" for ::1 at 2016-11-18 13:45:21 -0600
+
+ActionController::RoutingError (No route matches [GET] "/resources.json"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (170.7ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479498321640" for ::1 at 2016-11-18 13:45:21 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479498321640"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:51:17 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/resources.json?_=1479498678041" for ::1 at 2016-11-18 13:51:18 -0600
+
+ActionController::RoutingError (No route matches [GET] "/resources.json"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (172.8ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479498678042" for ::1 at 2016-11-18 13:51:18 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479498678042"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 58ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479498678043" for ::1 at 2016-11-18 13:51:33 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479498678043"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 58ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-13&end=2016-11-20&_=1479498678044" for ::1 at 2016-11-18 13:51:38 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-13", "end"=>"2016-11-20", "_"=>"1479498678044"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (1.7ms)
+Completed 200 OK in 58ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-10-30&end=2016-12-11&_=1479498678045" for ::1 at 2016-11-18 13:51:42 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-10-30", "end"=>"2016-12-11", "_"=>"1479498678045"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 58ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/1" for ::1 at 2016-11-18 13:51:49 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/resources.json?_=1479498710798" for ::1 at 2016-11-18 13:51:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/resources.json"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (173.7ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479498710799" for ::1 at 2016-11-18 13:51:51 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479498710799"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (1.5ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-10-30&end=2016-12-11&_=1479498710800" for ::1 at 2016-11-18 13:51:53 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-10-30", "end"=>"2016-12-11", "_"=>"1479498710800"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.1ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479498751218" for ::1 at 2016-11-18 13:52:31 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479498751218"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.2ms)
+Completed 200 OK in 59ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/resources.json?_=1479498751217" for ::1 at 2016-11-18 13:52:31 -0600
+
+ActionController::RoutingError (No route matches [GET] "/resources.json"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (190.7ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:52:34 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/resources.json?_=1479498754254" for ::1 at 2016-11-18 13:52:34 -0600
+
+ActionController::RoutingError (No route matches [GET] "/resources.json"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (192.2ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479498754255" for ::1 at 2016-11-18 13:52:34 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479498754255"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.3ms)
+Completed 200 OK in 59ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:55:44 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479498944375" for ::1 at 2016-11-18 13:55:44 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479498944375"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-13&end=2016-11-20&_=1479498944376" for ::1 at 2016-11-18 13:55:46 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-13", "end"=>"2016-11-20", "_"=>"1479498944376"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.2ms)
+Completed 200 OK in 61ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:55:49 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479498949901" for ::1 at 2016-11-18 13:55:50 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479498949901"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (1.5ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 13:56:01 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 47ms (Views: 46.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479498961501" for ::1 at 2016-11-18 13:56:01 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479498961501"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.2ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-12-04&end=2016-12-11&_=1479498961502" for ::1 at 2016-11-18 14:04:43 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-12-04", "end"=>"2016-12-11", "_"=>"1479498961502"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-10-30&end=2016-12-11&_=1479498961503" for ::1 at 2016-11-18 14:04:47 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-10-30", "end"=>"2016-12-11", "_"=>"1479498961503"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:04:51 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479499491117" for ::1 at 2016-11-18 14:04:51 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479499491117"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (1.9ms)
+Completed 200 OK in 60ms (Views: 58.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:05:07 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 47ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479499508050" for ::1 at 2016-11-18 14:05:08 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479499508050"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (1.5ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:05:11 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479499511983" for ::1 at 2016-11-18 14:05:12 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479499511983"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (1.7ms)
+Completed 200 OK in 60ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:23:23 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 48ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479500603639" for ::1 at 2016-11-18 14:23:23 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479500603639"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:24:23 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479500663961" for ::1 at 2016-11-18 14:24:24 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479500663961"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.8ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-27&end=2016-12-04&_=1479500663962" for ::1 at 2016-11-18 14:24:29 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-27", "end"=>"2016-12-04", "_"=>"1479500663962"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 56ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-10-30&end=2016-12-11&_=1479500663963" for ::1 at 2016-11-18 14:24:32 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-10-30", "end"=>"2016-12-11", "_"=>"1479500663963"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.1ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:27:43 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 58ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:28:59 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 60ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479500940025" for ::1 at 2016-11-18 14:29:00 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479500940025"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.8ms)
+Completed 200 OK in 75ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:29:14 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479500954677" for ::1 at 2016-11-18 14:29:14 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479500954677"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:37:58 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479501478366" for ::1 at 2016-11-18 14:37:58 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479501478366"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 61ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-13&end=2016-11-20&_=1479501478367" for ::1 at 2016-11-18 14:38:40 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-13", "end"=>"2016-11-20", "_"=>"1479501478367"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-10-30&end=2016-12-11&_=1479501478368" for ::1 at 2016-11-18 14:38:46 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-10-30", "end"=>"2016-12-11", "_"=>"1479501478368"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:38:52 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479501532835" for ::1 at 2016-11-18 14:38:53 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479501532835"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 58ms (Views: 57.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:42:20 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/json/resources.json?_=1479501741104" for ::1 at 2016-11-18 14:42:21 -0600
+
+ActionController::RoutingError (No route matches [GET] "/json/resources.json"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (169.2ms)
+
+
+Started GET "/json/events.json?start=2016-09-07&end=2016-09-08&_=1479501741105" for ::1 at 2016-11-18 14:42:21 -0600
+
+ActionController::RoutingError (No route matches [GET] "/json/events.json"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (168.6ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:43:13 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-09-07&end=2016-09-08&_=1479501793191" for ::1 at 2016-11-18 14:43:13 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-09-07", "end"=>"2016-09-08", "_"=>"1479501793191"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 57ms (Views: 56.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-09-07&end=2016-09-10&_=1479501793192" for ::1 at 2016-11-18 14:43:17 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-09-07", "end"=>"2016-09-10", "_"=>"1479501793192"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 57ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-09-04&end=2016-09-11&_=1479501793193" for ::1 at 2016-11-18 14:43:18 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-09-04", "end"=>"2016-09-11", "_"=>"1479501793193"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.6ms)
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-08-28&end=2016-10-09&_=1479501793194" for ::1 at 2016-11-18 14:43:18 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-08-28", "end"=>"2016-10-09", "_"=>"1479501793194"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:43:24 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-09-07&end=2016-09-08&_=1479501804417" for ::1 at 2016-11-18 14:43:24 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-09-07", "end"=>"2016-09-08", "_"=>"1479501804417"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.4ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:44:25 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 60ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:44:28 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 48ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:44:35 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:48:06 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-09-07&end=2016-09-08&_=1479502086410" for ::1 at 2016-11-18 14:48:06 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-09-07", "end"=>"2016-09-08", "_"=>"1479502086410"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:49:46 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479502186426" for ::1 at 2016-11-18 14:49:46 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479502186426"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 62ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479502186427" for ::1 at 2016-11-18 14:49:50 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479502186427"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.4ms)
+Completed 200 OK in 58ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-13&end=2016-11-20&_=1479502186428" for ::1 at 2016-11-18 14:49:51 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-13", "end"=>"2016-11-20", "_"=>"1479502186428"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 57ms (Views: 56.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-10-30&end=2016-12-11&_=1479502186429" for ::1 at 2016-11-18 14:49:53 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-10-30", "end"=>"2016-12-11", "_"=>"1479502186429"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.3ms)
+Completed 200 OK in 59ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-18 14:49:57 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479502197186" for ::1 at 2016-11-18 14:49:57 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479502197186"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for ::1 at 2016-11-18 14:49:58 -0600
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (62.3ms)
+  Rendered events/new.html.erb within layouts/application (86.9ms)
+Completed 200 OK in 131ms (Views: 130.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for ::1 at 2016-11-18 14:50:10 -0600
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G7ctoP7cGmPE1Cl6Y9AHUiTpbXgvb+T0YNaBHEni37Z+kBF76P8pQifZ6vgcBt0ITfjzEE6i5jPtRYlXCzeQWQ==", "event"=>{"title"=>"Cheiss 2", "description"=>"dd", "start_time(1i)"=>"2016", "start_time(2i)"=>"11", "start_time(3i)"=>"15", "start_time(4i)"=>"20", "start_time(5i)"=>"49", "end_time(1i)"=>"2016", "end_time(2i)"=>"11", "end_time(3i)"=>"20", "end_time(4i)"=>"20", "end_time(5i)"=>"49"}, "commit"=>"Create Event"}
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("title", "description", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["title", "Cheiss 2"], ["description", "dd"], ["start_time", "2016-11-15 20:49:00.000000"], ["end_time", "2016-11-20 20:49:00.000000"], ["created_at", "2016-11-18 20:50:10.313825"], ["updated_at", "2016-11-18 20:50:10.313825"]]
+  [1m[36m (95.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/3
+Completed 302 Found in 101ms (ActiveRecord: 96.6ms)
+
+
+Started GET "/events/3" for ::1 at 2016-11-18 14:50:10 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered events/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 14:50:12 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 45ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479502212105" for ::1 at 2016-11-18 14:50:12 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479502212105"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479502212106" for ::1 at 2016-11-18 14:50:15 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479502212106"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.6ms)
+Completed 200 OK in 56ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-13&end=2016-11-20&_=1479502212107" for ::1 at 2016-11-18 14:50:16 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-13", "end"=>"2016-11-20", "_"=>"1479502212107"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.2ms)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 14:55:16 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/resources.json?_=1479502516208" for ::1 at 2016-11-18 14:55:16 -0600
+
+ActionController::RoutingError (No route matches [GET] "/resources.json"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.1.0) lib/quiet_assets.rb:27:in `call_with_quiet_assets'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (168.1ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479502516209" for ::1 at 2016-11-18 14:55:16 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479502516209"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 14:55:36 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479502536180" for ::1 at 2016-11-18 14:55:36 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479502536180"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.9ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-13&end=2016-11-20&_=1479502536181" for ::1 at 2016-11-18 14:55:59 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-13", "end"=>"2016-11-20", "_"=>"1479502536181"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-10-30&end=2016-12-11&_=1479502536182" for ::1 at 2016-11-18 14:56:07 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-10-30", "end"=>"2016-12-11", "_"=>"1479502536182"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.9ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 14:58:19 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479502700020" for ::1 at 2016-11-18 14:58:20 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479502700020"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 78ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 14:58:24 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 47ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479502704125" for ::1 at 2016-11-18 14:58:24 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479502704125"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.3ms)
+Completed 200 OK in 61ms (Views: 60.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 14:58:35 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 47ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479502715820" for ::1 at 2016-11-18 14:58:35 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479502715820"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (1.8ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/new" for ::1 at 2016-11-18 14:59:47 -0600
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (4.5ms)
+  Rendered events/new.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 63ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479502789039" for ::1 at 2016-11-18 14:59:49 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479502789039"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.5ms)
+  [1m[36mEvent Load (2.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddResourceIdColumnToEvent (20161118210507)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "events" ADD "resourceId" integer[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20161118210507"]]
+  [1m[36m (88.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mEvent Load (1.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:07:44 -0600
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479503264537" for ::1 at 2016-11-18 15:07:44 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479503264537"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:10:19 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 53ms (Views: 50.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479503419800" for ::1 at 2016-11-18 15:10:20 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479503419800"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 59ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/new" for ::1 at 2016-11-18 15:10:22 -0600
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (5.2ms)
+  Rendered events/new.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 63ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/events" for ::1 at 2016-11-18 15:10:39 -0600
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iJwZcz8jYXu1NJFdHB4EdF5wHLvSezPT6X5vzkbRxBTtuyWoKQBSWlY5Ut9jyN4uN2GC07O2MRRk7WeFBASL+w==", "event"=>{"title"=>"Mr. Smith", "description"=>"JS", "start_time(1i)"=>"2016", "start_time(2i)"=>"11", "start_time(3i)"=>"18", "start_time(4i)"=>"21", "start_time(5i)"=>"10", "end_time(1i)"=>"2016", "end_time(2i)"=>"11", "end_time(3i)"=>"20", "end_time(4i)"=>"21", "end_time(5i)"=>"10", "resourceId"=>"c"}, "commit"=>"Create Event"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "events" ("title", "description", "resourceId", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["title", "Mr. Smith"], ["description", "JS"], ["resourceId", 0], ["start_time", "2016-11-18 21:10:00.000000"], ["end_time", "2016-11-20 21:10:00.000000"], ["created_at", "2016-11-18 21:10:39.817857"], ["updated_at", "2016-11-18 21:10:39.817857"]]
+  [1m[36m (103.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/4
+Completed 302 Found in 109ms (ActiveRecord: 104.1ms)
+
+
+Started GET "/events/4" for ::1 at 2016-11-18 15:10:39 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered events/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:10:41 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 45ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479503441437" for ::1 at 2016-11-18 15:10:41 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479503441437"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (1.7ms)
+Completed 200 OK in 58ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:10:43 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 48ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479503443832" for ::1 at 2016-11-18 15:10:43 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479503443832"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.5ms)
+  [1m[36mEvent Load (1.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:11:54 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479503514764" for ::1 at 2016-11-18 15:11:54 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479503514764"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:12:45 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479503566085" for ::1 at 2016-11-18 15:12:46 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479503566085"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:13:03 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 67ms (Views: 64.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479503583510" for ::1 at 2016-11-18 15:13:03 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479503583510"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.3ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479503583511" for ::1 at 2016-11-18 15:13:06 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479503583511"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 62ms (Views: 61.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-13&end=2016-11-20&_=1479503583512" for ::1 at 2016-11-18 15:13:07 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-13", "end"=>"2016-11-20", "_"=>"1479503583512"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/1.html" for ::1 at 2016-11-18 15:13:10 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered events/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 48ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479503591815" for ::1 at 2016-11-18 15:13:11 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479503591815"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-10-30&end=2016-12-11&_=1479503591816" for ::1 at 2016-11-18 15:13:12 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-10-30", "end"=>"2016-12-11", "_"=>"1479503591816"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/4.html" for ::1 at 2016-11-18 15:13:16 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered events/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:13:18 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479503598321" for ::1 at 2016-11-18 15:13:18 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479503598321"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (3.1ms)
+Completed 200 OK in 61ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:14:44 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:15:05 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479503705586" for ::1 at 2016-11-18 15:15:05 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479503705586"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 59ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479503705587" for ::1 at 2016-11-18 15:15:09 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479503705587"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:15:33 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-19&_=1479503733754" for ::1 at 2016-11-18 15:15:33 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-19", "_"=>"1479503733754"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 59ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479503733755" for ::1 at 2016-11-18 15:15:39 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479503733755"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-13&end=2016-11-20&_=1479503733756" for ::1 at 2016-11-18 15:15:40 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-13", "end"=>"2016-11-20", "_"=>"1479503733756"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 59ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479503733757" for ::1 at 2016-11-18 15:15:43 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479503733757"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-13&end=2016-11-20&_=1479503733758" for ::1 at 2016-11-18 15:15:50 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-13", "end"=>"2016-11-20", "_"=>"1479503733758"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.7ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479503733759" for ::1 at 2016-11-18 15:15:54 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479503733759"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:15:55 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479503755660" for ::1 at 2016-11-18 15:15:55 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479503755660"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.6ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-13&end=2016-11-20&_=1479503755661" for ::1 at 2016-11-18 15:16:03 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-13", "end"=>"2016-11-20", "_"=>"1479503755661"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479503755662" for ::1 at 2016-11-18 15:16:05 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479503755662"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:16:25 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-13&end=2016-11-20&_=1479503785502" for ::1 at 2016-11-18 15:16:25 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-13", "end"=>"2016-11-20", "_"=>"1479503785502"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:16:47 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479503807449" for ::1 at 2016-11-18 15:16:47 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479503807449"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:22:29 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479504149586" for ::1 at 2016-11-18 15:22:29 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479504149586"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 61ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:23:49 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479504230075" for ::1 at 2016-11-18 15:23:50 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479504230075"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.8ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:24:31 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479504271659" for ::1 at 2016-11-18 15:24:31 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479504271659"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 68ms (Views: 67.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:27:48 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479504468291" for ::1 at 2016-11-18 15:27:48 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479504468291"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (2.5ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:28:09 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479504489976" for ::1 at 2016-11-18 15:28:10 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479504489976"}
+  [1m[36mEvent Load (0.5ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:29:35 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479504575349" for ::1 at 2016-11-18 15:29:35 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479504575349"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.2ms)
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/3" for ::1 at 2016-11-18 15:32:04 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered events/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:32:08 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479504728301" for ::1 at 2016-11-18 15:32:08 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479504728301"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events/2" for ::1 at 2016-11-18 15:32:10 -0600
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered events/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events/2/edit" for ::1 at 2016-11-18 15:32:11 -0600
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered events/_form.html.erb (5.0ms)
+  Rendered events/edit.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events" for ::1 at 2016-11-18 15:32:14 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-18&end=2016-11-21&_=1479504734496" for ::1 at 2016-11-18 15:32:14 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-18", "end"=>"2016-11-21", "_"=>"1479504734496"}
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.json.jbuilder (2.0ms)
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.5ms)

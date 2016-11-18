@@ -1,84 +1,131 @@
-<link rel="apple-touch-icon" sizes="57x57" href="https://fullcalendar.io/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="https://fullcalendar.io/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="https://fullcalendar.io/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="https://fullcalendar.io/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="https://fullcalendar.io/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="https://fullcalendar.io/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="https://fullcalendar.io/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="https://fullcalendar.io/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://fullcalendar.io/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" href="https://fullcalendar.io/favicon-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="https://fullcalendar.io/favicon-160x160.png" sizes="160x160">
-<link rel="icon" type="image/png" href="https://fullcalendar.io/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="https://fullcalendar.io/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="https://fullcalendar.io/favicon-32x32.png" sizes="32x32">
+<script type="text/javascript">
+	$(function() { // document ready
 
-<link href='//fonts.googleapis.com/css?family=Lato:100,400,700' rel='stylesheet' />
+		$('#calendar').fullCalendar({
+			editable: true, // enable draggable events
+			aspectRatio: 1.8,
+      //allDaySlot: true,
+      groupByDateAndResource: true,
 
-  <%= stylesheet_link_tag "fullcalendar.min.css" %>
-	<!-- <%= stylesheet_link_tag "base.css" %> -->
-	<%= stylesheet_link_tag "fullcalendar.print.css" %>
-	<%= stylesheet_link_tag "scheduler.min.css" %>
-  <%= javascript_include_tag "moment.min.js" %>
-  <%= javascript_include_tag "jquery.min.js" %>
-	<%= javascript_include_tag "fullcalendar.min.js" %>
-  <%= javascript_include_tag "scheduler.min.js" %>
+      schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
+			header: {
+				left: 'today prev,next',
+				center: 'title',
+				right: 'timelineThreeDays,agendaWeek,month'
+			},
+			defaultView: 'timelineThreeDays',
+			views: {
+				timelineThreeDays: {
+					type: 'timeline',
+					duration: { days: 3 }
 
-  <!-- <%= javascript_include_tag "home-scheduler.js" %> -->
-<!-- <script id="data" type="application/json">
-    {
-      $('#calendar').fullCalendar({
-      events: '/events.json'
-      });
-    }
-</script> -->
+				}
+			},
+			resourceLabelText: 'Rooms',
 
-<script id="data" type="application/json">
-    {
+			resources: [
 
-	$('#calendar').fullCalendar({
-		now: '2016-09-07',
-		editable: true, // enable draggable events
-		aspectRatio: 1.8,
-		scrollTime: '00:00', // undo default 6am scrollTime
-		header: {
-			left: 'today prev,next',
-			center: 'title',
-			right: 'timelineDay,timelineThreeDays,agendaWeek,month'
-		},
-		defaultView: 'timelineDay',
-		views: {
-			timelineThreeDays: {
-				type: 'timeline',
-				duration: { days: 3 }
-			}
-		},
-		resourceLabelText: 'Rooms',
+      	{ "id": "1", "title": "Asteria", "children": [
+      		{ "id": "2", "title": "Asteria 312" },
+      		{ "resourceId": "3", "title": "Asteria 502"},
+      		{ "id": "4", "title": "Asteria 514"},
+      		{ "id": "5", "title": "Asteria 811"},
+      		{ "id": "6", "title": "Asteria 903"},
+      		{ "id": "7", "title": "Asteria 1109"},
+      	] },
+      	{ "id": "h", "title": "Vesta", "children": [
+      	{ "id": "i", "title": "Vesta 402", "eventColor": "red" },
+      	{ "id": "j", "title": "Vesta 403" },
+      	{ "id": "k", "title": "Vesta 406" },
+      	{ "id": "l", "title": "Vesta 502" },
+      	{ "id": "m", "title": "Vesta 506" },
+      	{ "id": "n", "title": "Vesta 507" },
+      	{ "id": "o", "title": "Vesta 602" },
+      	{ "id": "p", "title": "Vesta 604" },
+      ] }],
 
-		resources: { // you can also specify a plain string like 'json/resources.json'
-			url: '/resources.json',
-			error: function() {
-				$('#script-warning').show();
-			}
-		},
+			events: '/events.json',
 
-		events: { // you can also specify a plain string like 'json/events.json'
-			url: '/events.json',
-			error: function() {
-				$('#script-warning').show();
-			}
-		}
-	});
+      eventDrop: function(event, delta, revertFunc) {
+          // alert(event.title + " was dropped on " + event.start.format());
+          if (!confirm("Are you sure about this change?")) {
+              revertFunc();
+          } else {
+            // 1.  FOR DEBUGGING.
+            console.log(event);
+            // console.log(event.to_json);
+            // console.log(event.start);
+            // console.log(event.start._i);
+            console.log(event.start._d);
 
-});
+            // 2. Update event
+            $.ajax({
+              url: event.url,
+              type: 'PATCH',
+              dataType: "json",
+              // Got this part from a Stack Overflow answer / NEEDS REVIEW
+              beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
+              data:
+                { event:
+                  {
+                    // NEEDS REVIEW TO DETERMINE IF TIME FORMAT CORRECT
+                    start_time: event.start._d,
+                    end_time: event.end._d
+                  }
+                },
+              success: function(response) {
+              }
+            });
+          }
+        }
+      })
+    });
 
 </script>
+<style>
 
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
 
+	#script-warning {
+		display: none;
+		background: #eee;
+		border-bottom: 1px solid #ddd;
+		padding: 0 10px;
+		line-height: 40px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 12px;
+		color: red;
+	}
 
+	#loading {
+		display: none;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
 
+	#calendar {
+		max-width: 900px;
+		margin: 50px auto;
+	}
 
-<div id='calendar'></div>
+</style>
+</head>
+<body>
+
+	<div id='script-warning'>
+		This page should be running from a webserver, to allow fetching from the <code>json/</code> directory.
+	</div>
+
+	<div id='loading'>loading...</div>
+
+	<div id='calendar'></div>
 
 </body>
 </html>
@@ -118,38 +165,3 @@
 <%= link_to 'New Event', new_event_path %>
 
 <br>
-
-<style>
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-	font-size: 14px;
-}
-
-#script-warning {
-	display: none;
-	background: #eee;
-	border-bottom: 1px solid #ddd;
-	padding: 0 10px;
-	line-height: 40px;
-	text-align: center;
-	font-weight: bold;
-	font-size: 12px;
-	color: red;
-}
-
-#loading {
-	display: none;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-}
-
-#calendar {
-	max-width: 900px;
-	margin: 50px auto;
-}
-
-</style>

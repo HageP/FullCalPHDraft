@@ -2905,7 +2905,7 @@ TimelineGrid = (function(superClass) {
     for (i = m = 0, len3 = cellRows.length; m < len3; i = ++m) {
       rowCells = cellRows[i];
       isLast = i === cellRows.length - 1;
-      html += '<tr' + (isChrono && isLast ? ' class="fc-chrono"' : '') + '>';
+      // html += '<tr' + (isChrono && isLast ? ' class="fc-chrono"' : '') + '>';
       for (n = 0, len4 = rowCells.length; n < len4; n++) {
         cell = rowCells[n];
         html += '<th class="' + this.view.widgetHeaderClass + ' ' + (cell.weekStart ? 'fc-em-cell' : '') + '"' + ' data-date="' + cell.dateData + '"' + (cell.colspan > 1 ? ' colspan="' + cell.colspan + '"' : '') + '>' + '<div class="fc-cell-content">' + '<span class="fc-cell-text">' + htmlEscape(cell.text) + '</span>' + '</div>' + '</th>';
@@ -4046,7 +4046,7 @@ ResourceTimelineView = (function(superClass) {
   /*
   	TODO: the scenario where there were previously unassociated events that are now
   	 attached to this resource. should render those events immediately.
-  
+
   	Responsible for rendering the new resource
    */
 

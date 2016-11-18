@@ -129,15 +129,15 @@
 
 </body>
 </html>
-<h1>Listing events</h1>
+<h1>Tenant  List</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Start time</th>
-      <th>End time</th>
+      <th>Tenant</th>
+      <th>Room</th>
+      <th>Start Date</th>
+      <th>End Date</th>
       <th></th>
       <th></th>
       <th></th>
@@ -148,7 +148,7 @@
     <% @events.each do |event| %>
       <tr>
         <td><%= event.title %></td>
-        <td><%= event.description %></td>
+        <td><%= event.resourceId %></td>
         <td><%= event.start_time %></td>
         <td><%= event.end_time %></td>
         <td><%= link_to 'Show', event %></td>

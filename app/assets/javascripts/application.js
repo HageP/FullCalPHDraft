@@ -18,4 +18,3 @@
 //= require fullcalendar.min
 //= require scheduler.min
 //= require scheduler
-//= require_tree .

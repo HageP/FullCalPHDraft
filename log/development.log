@@ -6379,3 +6379,443 @@ ActionView::MissingTemplate (Missing template events/index, application/index wi
   Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
   Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1736.6ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:50:16 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb (14.0ms)
+Completed 200 OK in 108ms (Views: 103.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:52:01 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb (4.0ms)
+Completed 200 OK in 114ms (Views: 113.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:52:04 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb (4.0ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:55:22 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 2380ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (TypeError: Object doesn't support this property or method
+  (in C:/Users/hagep/Google Drive/Booth/App Dev/Github/FullCalPHDraft/app/assets/javascripts/resources.js.coffee)):
+    4:   <title>FullcalendarAndRails</title>
+    5:   <%= csrf_meta_tags %>
+    6: 
+    7:   <%= javascript_include_tag "application" %>
+    8: 
+    9:   <link rel='stylesheet' href='http://bostonexec.com/css/fullcalendar.min.css' />
+   10:   <link rel='stylesheet' href='http://bostonexec.com/css/fullcalendar.print.css' media='print' />
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__109328529_43115148'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1094.4ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (1031.2ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2260.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:55:32 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 579ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (TypeError: Object doesn't support this property or method
+  (in C:/Users/hagep/Google Drive/Booth/App Dev/Github/FullCalPHDraft/app/assets/javascripts/resources.js.coffee)):
+    4:   <title>FullcalendarAndRails</title>
+    5:   <%= csrf_meta_tags %>
+    6: 
+    7:   <%= javascript_include_tag "application" %>
+    8: 
+    9:   <link rel='stylesheet' href='http://bostonexec.com/css/fullcalendar.min.css' />
+   10:   <link rel='stylesheet' href='http://bostonexec.com/css/fullcalendar.print.css' media='print' />
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__109328529_43115148'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1019.4ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (929.1ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2281.4ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:56:19 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (20.5ms)
+Completed 500 Internal Server Error in 1129ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (TypeError: Object doesn't support this property or method
+  (in C:/Users/hagep/Google Drive/Booth/App Dev/Github/FullCalPHDraft/app/assets/javascripts/resources.js.coffee)):
+    4:   <title>FullcalendarAndRails</title>
+    5:   <%= csrf_meta_tags %>
+    6: 
+    7:   <%= javascript_include_tag "application" %>
+    8: 
+    9:   <link rel='stylesheet' href='http://bostonexec.com/css/fullcalendar.min.css' />
+   10:   <link rel='stylesheet' href='http://bostonexec.com/css/fullcalendar.print.css' media='print' />
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___863200428_47794488'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (880.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (993.1ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2251.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:56:24 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 546ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (TypeError: Object doesn't support this property or method
+  (in C:/Users/hagep/Google Drive/Booth/App Dev/Github/FullCalPHDraft/app/assets/javascripts/resources.js.coffee)):
+    4:   <title>FullcalendarAndRails</title>
+    5:   <%= csrf_meta_tags %>
+    6: 
+    7:   <%= javascript_include_tag "application" %>
+    8: 
+    9:   <link rel='stylesheet' href='http://bostonexec.com/css/fullcalendar.min.css' />
+   10:   <link rel='stylesheet' href='http://bostonexec.com/css/fullcalendar.print.css' media='print' />
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___863200428_47794488'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1045.4ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (811.3ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (1788.7ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:56:44 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.5ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 449ms (Views: 447.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479833805610" for ::1 at 2016-11-22 10:56:46 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479833805610"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (31.0ms)
+Completed 200 OK in 227ms (Views: 224.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:56:57 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 105ms (Views: 102.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479833817905" for ::1 at 2016-11-22 10:56:58 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479833817905"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (4.0ms)
+Completed 200 OK in 141ms (Views: 139.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:57:10 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 103ms (Views: 102.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479833830793" for ::1 at 2016-11-22 10:57:11 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479833830793"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (6.0ms)
+Completed 200 OK in 190ms (Views: 186.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:57:46 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 136ms (Views: 134.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479833867122" for ::1 at 2016-11-22 10:57:47 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479833867122"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 194ms (Views: 192.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:58:21 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 1.0ms)
+
+ActionView::Template::Error (undefined method `stylesheet_include_tag' for #<#<Class:0x5bafa18>:0x5a0dde8>):
+     5:   <%= csrf_meta_tags %>
+     6: 
+     7:   <%= javascript_include_tag "application" %>
+     8:   <%= stylesheet_include_tag "application" %>
+     9: 
+    10:   <link rel='stylesheet' href='http://bostonexec.com/css/fullcalendar.min.css' />
+    11:   <link rel='stylesheet' href='http://bostonexec.com/css/fullcalendar.print.css' media='print' />
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___863200428_47151828'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1619.7ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (649.3ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2301.4ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:58:32 -0600
+Processing by EventsController#index as HTML
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `stylesheet_include_tag' for #<#<Class:0x5bafa18>:0x3a1f7a8>):
+     5:   <%= csrf_meta_tags %>
+     6: 
+     7:   <%= javascript_include_tag "application" %>
+     8:   <%= stylesheet_include_tag "application" %>
+     9: 
+    10: 
+    11: 
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___863200428_30321564'
+
+
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (1015.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (896.7ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (2229.1ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:59:12 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 402ms (Views: 400.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479833953014" for ::1 at 2016-11-22 10:59:13 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479833953014"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 104ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:59:44 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 129ms (Views: 126.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479833985403" for ::1 at 2016-11-22 10:59:45 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479833985403"}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (4.0ms)
+Completed 200 OK in 213ms (Views: 210.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:59:46 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 118ms (Views: 116.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479833987272" for ::1 at 2016-11-22 10:59:47 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479833987272"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (6.0ms)
+Completed 200 OK in 144ms (Views: 143.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 10:59:59 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 230ms (Views: 228.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479834000347" for ::1 at 2016-11-22 11:00:00 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479834000347"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 109ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 11:00:19 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 128ms (Views: 125.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479834019972" for ::1 at 2016-11-22 11:00:20 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479834019972"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 138ms (Views: 136.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 11:00:52 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 97ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479834052519" for ::1 at 2016-11-22 11:00:53 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479834052519"}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (4.0ms)
+Completed 200 OK in 224ms (Views: 220.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 11:02:14 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 111ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479834135307" for ::1 at 2016-11-22 11:02:15 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479834135307"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (5.0ms)
+Completed 200 OK in 177ms (Views: 174.8ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/events/2.html" for ::1 at 2016-11-22 11:02:29 -0600
+Processing by EventsController#update as HTML
+  Parameters: {"event"=>{"start_time"=>"Wed Nov 16 2016 18:21:00 GMT-0600 (Central Standard Time)", "end_time"=>"Sun Nov 27 2016 18:21:00 GMT-0600 (Central Standard Time)", "resourceId"=>"_fc1"}, "id"=>"2"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.0ms)[0m  UPDATE "events" SET "resourceId" = ?, "updated_at" = ? WHERE "events"."id" = ?  [["resourceId", 0], ["updated_at", "2016-11-22 17:02:29.718853"], ["id", 2]]
+  [1m[36m (38.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/2
+Completed 200 OK in 130ms (ActiveRecord: 43.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 11:02:33 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479834153572" for ::1 at 2016-11-22 11:02:34 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479834153572"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (9.0ms)
+Completed 200 OK in 179ms (Views: 176.1ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/events/1.html" for ::1 at 2016-11-22 11:03:39 -0600
+Processing by EventsController#update as HTML
+  Parameters: {"event"=>{"start_time"=>"Tue Nov 15 2016 09:18:00 GMT-0600 (Central Standard Time)", "end_time"=>"Sun Nov 20 2016 09:18:00 GMT-0600 (Central Standard Time)", "resourceId"=>"4"}, "id"=>"1"}
+  [1m[35mEvent Load (4.6ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  UPDATE "events" SET "resourceId" = ?, "updated_at" = ? WHERE "events"."id" = ?  [["resourceId", 4], ["updated_at", "2016-11-22 17:03:39.785502"], ["id", 1]]
+  [1m[36m (28.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/1
+Completed 200 OK in 81ms (ActiveRecord: 36.1ms)
+
+
+Started PATCH "/events/1.html" for ::1 at 2016-11-22 11:03:48 -0600
+Processing by EventsController#update as HTML
+  Parameters: {"event"=>{"start_time"=>"Thu Nov 17 2016 09:18:00 GMT-0600 (Central Standard Time)", "end_time"=>"Tue Nov 22 2016 09:18:00 GMT-0600 (Central Standard Time)", "resourceId"=>"_fc1"}, "id"=>"1"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT  "events".* FROM "events" WHERE "events"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (26.0ms)[0m  UPDATE "events" SET "start_time" = ?, "end_time" = ?, "resourceId" = ?, "updated_at" = ? WHERE "events"."id" = ?  [["start_time", "2016-11-17 15:18:00.000000"], ["end_time", "2016-11-22 15:18:00.000000"], ["resourceId", 0], ["updated_at", "2016-11-22 17:03:48.052024"], ["id", 1]]
+  [1m[36m (35.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/events/1
+Completed 200 OK in 110ms (ActiveRecord: 61.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-22 11:05:27 -0600
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/events.json?start=2016-11-01&end=2016-12-01&_=1479834327759" for ::1 at 2016-11-22 11:05:28 -0600
+Processing by EventsController#index as JSON
+  Parameters: {"start"=>"2016-11-01", "end"=>"2016-12-01", "_"=>"1479834327759"}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered events/index.json.jbuilder (3.0ms)
+Completed 200 OK in 195ms (Views: 192.6ms | ActiveRecord: 0.0ms)

@@ -13,7 +13,7 @@
 				center: 'title',
 				right: 'timelineThreeDays,agendaWeek,month'
 			},
-			defaultView: 'timelineThreeDays',
+			defaultView: 'timelineMonth',
 			views: {
 				timelineThreeDays: {
 					type: 'timeline',
@@ -70,7 +70,8 @@
                   {
                     // NEEDS REVIEW TO DETERMINE IF TIME FORMAT CORRECT
                     start_time: event.start._d,
-                    end_time: event.end._d
+                    end_time: event.end._d,
+										resourceId:event.resourceId,
                   }
                 },
               success: function(response) {

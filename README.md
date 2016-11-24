@@ -1,4 +1,3 @@
-fullcalendar_and_rails_example
+Multiple Unit Housing Calendar - Corporate, Resort, Small Building
 ==============================
-
-An example about how to integrate FulllCalendar and Ruby on Rails using jbuilder
+Interactive Calendar allowing tenants to added into specific units, moved with drag and drop, edited as well as check-in/out reports by day

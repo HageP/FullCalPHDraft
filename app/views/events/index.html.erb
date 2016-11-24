@@ -2,6 +2,7 @@
 	$(function() { // document ready
 
 		$('#calendar').fullCalendar({
+			// now: 'today'
 			editable: true, // enable draggable events
 			aspectRatio: 1.8,
       //allDaySlot: true,
@@ -33,8 +34,8 @@
       		{ "id": "6", "title": "Asteria 903"},
       		{ "id": "7", "title": "Asteria 1109"},
       	] },
-      	{ "id": "8", "title": "Vesta", "children": [
-      	{ "id": "9", "title": "Vesta 402", "eventColor": "red" },
+      	{ "id": "8",  "title": "Vesta", "children": [
+      	{ "id": "9",  "title": "Vesta 402", "eventColor": "red" },
       	{ "id": "10", "title": "Vesta 403" },
       	{ "id": "11", "title": "Vesta 406" },
       	{ "id": "12", "title": "Vesta 502" },
@@ -42,7 +43,19 @@
       	{ "id": "14", "title": "Vesta 507" },
       	{ "id": "15", "title": "Vesta 602" },
       	{ "id": "16", "title": "Vesta 604" },
-      ] }],
+				{ "id": "17", "title": "Vesta 607" },
+      	{ "id": "18", "title": "Vesta 706" },
+      	{ "id": "19", "title": "Vesta 803" },
+
+      ] },
+		{ "id": "20", "title": "1330", "children": [
+			{ "id": "21", "title": "1330 908" },
+
+		]},
+		{ "id": "22", "title": "Garrison Square", "children": [
+			{ "id": "21", "title": "Garrison 305" },
+
+		]}],
 
 			events: '/events.json',
 

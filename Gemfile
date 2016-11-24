@@ -45,12 +45,13 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'fullcalendar-rails'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'quiet_assets'
 end
 
-gem 'fullcalendar-rails'
-gem 'rspec-rails', group: [:test, :development]
-gem 'capybara', group: [:test, :development]
-gem 'quiet_assets', group: [:test, :development]
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
